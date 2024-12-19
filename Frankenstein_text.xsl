@@ -72,22 +72,33 @@
     
     
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+    <xsl:template match="tei:del[@type= 'overwritten']">
+        <b>
+            <xsl:apply-templates/>
+        </b>
+    </xsl:template>    
+    
+    <xsl:template match="tei:lb">
+        <br/>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="tei:hi[@rend= 'sup']">
         <sup>
             <xsl:apply-templates/>
         </sup>
     </xsl:template>
     
-    <xsl:template match="tei:hi[@rend= 'u']">
-        <u>
-            <xsl:apply-templates/>
-        </u>
-    </xsl:template>
-      
     <xsl:template match="tei:hi[@rend= 'sub']">
         <sub>
             <xsl:apply-templates/>
         </sub>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend= 'u']">
+        <u>
+            <xsl:apply-templates/>
+        </u>
     </xsl:template>
     
 </xsl:stylesheet>
