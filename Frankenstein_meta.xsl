@@ -17,12 +17,26 @@
                          </div>
                          <div class="col">
                             <ul> 
-                                <li>Total number of modifications: 
+                                <li>Total number of corrections: 
                                     <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
                                 </li>
-                                <li>Number of additions: 
-                                    <!-- count the additions only -->
+                                <li>Total number of corrections Percy Shelly:
+                                    <xsl:value-of select="count(//tei:del[@hand='#PBS']|//tei:add[@hand='#PBS'])"/>                                    
                                 </li>
+                                <li>Total number of corrections Mary Wollstonecraft Shelly:
+                                    <xsl:value-of select="count(//tei:del[@hand='#MWS']|//tei:add[@hand='#MWS'])"/>                                    
+                                </li>
+                                <br/>
+                                <li>Number of additions: 
+                                    <xsl:value-of select="count(//tei:add)" />
+                                </li>
+                                <li>Number of deletions:
+                                    <xsl:value-of select="count(//tei:del)"/>                                    
+                                </li>
+                                <br/>
+                               <li>Number of total words:
+                                   <xsl:value-of select="count(//tei:dev)"/>
+                               </li>
                                 <!-- add other list items in which you count things, such as the modifications made by Percy -->
                             </ul>
                         </div>

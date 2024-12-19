@@ -95,6 +95,12 @@
         </sub>
     </xsl:template>
     
+    <xsl:template match="tei:hi[@rend= 'i']">
+        <i>
+            <xsl:apply-templates/>
+        </i>
+    </xsl:template>
+    
     <xsl:template match="tei:hi[@rend= 'u']">
         <u>
             <xsl:apply-templates/>
