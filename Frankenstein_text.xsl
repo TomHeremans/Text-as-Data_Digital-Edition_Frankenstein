@@ -77,6 +77,7 @@
             <xsl:attribute name="rend">
                 <xsl:value-of select="u"/>
             </xsl:attribute>
+            <xsl:apply-templates/>
         </u>
     </xsl:template>
     
