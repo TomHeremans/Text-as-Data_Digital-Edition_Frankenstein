@@ -72,11 +72,8 @@
     
     
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
-    <xsl:template match="tei:hi">
+    <xsl:template match="tei:hi[@rend= 'u']">
         <u>
-            <xsl:attribute name="rend">
-                <xsl:value-of select="u"/>
-            </xsl:attribute>
             <xsl:apply-templates/>
         </u>
     </xsl:template>
