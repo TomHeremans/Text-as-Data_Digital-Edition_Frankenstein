@@ -34,6 +34,11 @@
                                     <xsl:value-of select="count(//tei:del)"/>                                    
                                 </li>
                                 <br/>
+                                <li>
+                                    Total number of words:
+                                    <xsl:value-of select="count(tokenize(//div, '\s+'))"
+                                </li>
+                                <br/>
                                 <!-- add other list items in which you count things, such as the modifications made by Percy -->
                             </ul>
                         </div>
