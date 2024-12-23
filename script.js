@@ -124,7 +124,11 @@ function documentLoader() {
   function DelFunct() {
   var del_vision = document.getElementsByTagName('del');
   var del_Array = Array.from(del_vision);
+  if (event.target.style.fontWeight != 'bold') {
   del_Array.forEach((DelElement) => {DelElement.style.fontWeight = 'bold';});
-  
+  }
+  else {
+   del_Array.forEach((DelElement) => {DelElement.style.fontWeight = 'normal';});     
+  }
   }
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
