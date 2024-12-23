@@ -92,7 +92,10 @@ function documentLoader() {
       console.error("Error loading documents:", error);
     });
   }
-
+ 
+ // Initial document load
+  documentLoader();
+  statsLoader();
 
   // Event listener for sel1 change
   function selectHand(event) {
@@ -110,16 +113,13 @@ function documentLoader() {
      //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
      MaryArray.forEach((MaryElement) => {MaryElement.style.color = 'crimson';});
      PercyArray.forEach((PercyElement) => {PercyElement.style.color = 'lightgrey';});
-    } else {
+    } else if (event.target.value == 'Percy') {
      MarryArray.forEach((MaryElement) => {MaryElement.style.color = 'lightgrey';});
      PercyArray.forEach((PercyElement) => {PercyElement.style.color = 'crimson';});
      //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
     }
   }
   
- // Initial document load
-  documentLoader();
-  statsLoader();
   
   // write another function that will toggle the display of the deletions by clicking on a button
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
