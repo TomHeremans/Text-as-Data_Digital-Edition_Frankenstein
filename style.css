@@ -32,4 +32,9 @@ p {
     display: none !important;
 }
 
-
+.button {
+    border: none;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+}
