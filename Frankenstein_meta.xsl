@@ -26,6 +26,7 @@
                                 <li>Total number of corrections by Mary Wollstonecraft Shelly:
                                     <xsl:value-of select="count(//tei:del[@hand='#MWS']|//tei:add[@hand='#MWS'])"/>                                    
                                 </li>
+                                <br/>
                                 <li>Number of additions: 
                                     <xsl:value-of select="count(//tei:add)" />
                                 </li>
@@ -33,10 +34,9 @@
                                     <xsl:value-of select="count(//tei:del)"/>                                    
                                 </li>
                                 <li>Total number of words:
-                                    <xsl:value-of select="count(tokenize(//div, '\s+'))"></xsl:value-of>
+                                    <xsl:value-of select="count(tokenize(//div,'\s+'))"/>
                                 </li>
                                 <br/>
-                                <!-- add other list items in which you count things, such as the modifications made by Percy -->
                             </ul>
                         </div>
                      </div>
