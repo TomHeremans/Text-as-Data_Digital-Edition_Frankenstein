@@ -96,6 +96,7 @@ function documentLoader() {
   // Initial document load
   documentLoader();
   statsLoader();
+  
    // Event listener for sel1 change
   function selectHand(event) {
   var visible_all = document.getElementsByTagName('div').inText;
