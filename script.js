@@ -95,6 +95,7 @@ function documentLoader() {
 
   // Initial document load
   documentLoader();
+  
   statsLoader();
   
    // Event listener for sel1 change
