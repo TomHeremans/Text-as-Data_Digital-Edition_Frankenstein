@@ -6,7 +6,6 @@ let folio_xml = tei_xml.concat(extension);
 let page = document.getElementById("page");
 let pageN = page.innerHTML;
 let number = Number(pageN);
-let text = document.getElementByTagName("text").innerText;
 
 // Loading the IIIF manifest
 var mirador = Mirador.viewer({
@@ -104,34 +103,14 @@ function documentLoader() {
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
-  var TextArray = Array.from(text);
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-    TextArray.forEach((word) => {
-    word.style.color = 'black';
-    });
+     
     } else if (event.target.value == 'Mary') {
-     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black.
-     TextArray.forEach((word) => {
-     word.style.color = 'crimson';
-     });
-     MaryArray.forEach((MWS) => {
-     MWS.style.color = 'crimson';
-     });
-     PercyArray.forEach((PBS) => {
-     PBS.style.color = 'lightgrey';
-     });
+     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
      
     } else {
-    TextArray.forEach((word) => {
-    document.word.style.color = 'lightgrey';
-    });
-    MaryArray.forEach((MWS) => {
-    document.MWS.style.color = 'lightgrey';
-    });
-    PercyArray.forEach((PBS) => {
-    document.PBS.style.color = "crimson";
-    });
+     //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
     
     }
   }
