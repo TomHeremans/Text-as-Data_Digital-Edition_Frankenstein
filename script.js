@@ -124,7 +124,7 @@ function documentLoader() {
   function DelFunct() {
   var del_vision = document.getElementsByTagName('del');
   var del_Array = Array.from(del_vision);
-  if (event.target.style.fontWeight != 'bold') {
+  if (event.target.style.fontWeight !== 'bold') {
   del_Array.forEach((DelElement) => {DelElement.style.fontWeight = 'bold';});
   }
   else {
