@@ -34,7 +34,7 @@
                                     <xsl:value-of select="count(//tei:del)"/>                                    
                                 </li>
                                 <li>Total number of words:
-                                    <xsl:value-of select="count(tokenize(//div,'\s+'))"/>
+                                    <xsl:value-of select="count(tokenize(//div, '\s+'))"/>
                                 </li>
                                 <br/>
                             </ul>
