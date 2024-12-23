@@ -96,8 +96,9 @@ function documentLoader() {
   // Initial document load
   documentLoader();
   statsLoader();
-  // Event listener for sel1 change
+   // Event listener for sel1 change
   function selectHand(event) {
+  var visible_all = document.getElementsByTagName('div').inText;
   var visible_mary = document.getElementsByClassName('#MWS');
   var visible_percy = document.getElementsByClassName('#PBS');
   // Convert the HTMLCollection to an array for forEach compatibility
@@ -105,13 +106,16 @@ function documentLoader() {
   var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
+     MaryArray.forEach((MaryElement) => {MaryElement.style.color = 'black';});
+     PercyArray.forEach((PercyElement) => {PercyElement.style.color = 'black';});
     } else if (event.target.value == 'Mary') {
      //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
+     MaryArray.forEach((MaryElement) => {MaryElement.style.color = 'crimson';});
+     PercyArray.forEach((PercyElement) => {PercyElement.style.color = 'lightgrey';});
     } else {
+     MaryArray.forEach((MaryElement) => {MaryElement.style.color = 'lightgrey';});
+     PercyArray.forEach((PercyElement) => {PercyElement.style.color = 'crimson';});
      //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
     }
   }
 // write another function that will toggle the display of the deletions by clicking on a button
