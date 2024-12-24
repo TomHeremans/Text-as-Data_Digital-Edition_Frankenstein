@@ -34,9 +34,9 @@ p {
 
 /* Additions */
 .button {
-    border: none;
-    color: black;
-    background-color: lightgrey;
+    border: lightgrey;
+    color: lightgrey;
+    background-color: white;
     text-align: center;
 }
 
@@ -58,7 +58,7 @@ p {
     color: orange;
 }
 
-.circled{
+.circle{
     right: 8px;
     height: 25px;
     width: 25px;
