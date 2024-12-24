@@ -32,9 +32,51 @@ p {
     display: none !important;
 }
 
+/* Additions */
 .button {
     border: none;
     color: black;
     background-color: lightgrey;
     text-align: center;
+}
+
+.other {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.previous {
+    position:absolute;
+    right: 50px;
+    color: orange;
+}
+
+.next {
+    position:absolute;
+    right: 8px;
+    color: orange;
+}
+
+.circled{
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.supraAdd {
+    vertical-align:super;
+}
+
+.subAdd {
+    vertical-align:sub;
+}
+
+.double{
+    text-decoration-style: double;
 }

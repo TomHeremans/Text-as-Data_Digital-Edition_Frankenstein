@@ -1,0 +1,130 @@
+body {
+
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+img {
+    border: 5px white;
+    max-width: 100%;
+}
+
+p {
+    width: 100%;
+    margin-left: 20px;
+    color: white;
+    text-indent: 0px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marginAdd {
+    display: none;
+}
+
+.mirador-canvas-nav {
+    display: none !important;
+}
+
+/* General Additions */
+
+h1 {
+    color: white;
+    margin-left: 20px;
+
+}
+
+h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+h3 {
+    color: white;
+    margin-left: 20px;
+
+}
+
+h4 {
+    color: white;
+    margin-left: 20px;
+}
+
+li {
+    color: white;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+a {
+    color: orange;
+}
+
+.navbar-toggler{
+    color: orange;
+    background-color: black;
+}
+.button {
+    border: none;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.button2 {
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+.caption {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    min-height: 200px;
+    position: absolute;
+    top: 265px;
+    right: 0px;
+    background-color: black;
+}
+
+.container-fluid {
+    width: 700px;
+    position: absolute;
+    left: 0px;
+    background-color: black;
+    padding: 5px;
+}
+
+.other {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Image position for the Index Page */
+
+#image_left {
+    float: left;
+    width: 50%;
+    padding : 5px;
+}
+
+#image_right {
+    float: right;
+    width: 50%;
+    padding: 5px;
+}
