@@ -67,6 +67,7 @@ p {
     border-width: 1px;
     border-color: black;
     border-radius: 50%;
+    text-align: center;
     display: inline-block;
 }
 

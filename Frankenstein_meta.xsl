@@ -20,7 +20,7 @@
                                 <li>Total number of corrections: 
                                     <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
                                 </li>
-                                <li>Total number of corrections by Percy Shelly:
+                                <li>Total number of corrections by Percy Bysshe Shelly:
                                     <xsl:value-of select="count(//tei:del[@hand='#PBS']|//tei:add[@hand='#PBS'])"/>                                    
                                 </li>
                                 <li>Total number of corrections by Mary Wollstonecraft Shelly:
