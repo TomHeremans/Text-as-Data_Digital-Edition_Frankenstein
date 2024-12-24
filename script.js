@@ -126,6 +126,7 @@ function documentLoader() {
   var del_Array = Array.from(del_vision);
   if (event.target.style.fontWeight !== 'bold') {
   del_Array.forEach((DelElement) => {DelElement.style.fontWeight = 'bold';});
+  del_Array.forEach((DelElement) => {DelElement.style.color = 'orange';});
   }
   else {
    del_Array.forEach((DelElement) => {DelElement.style.fontWeight = 'normal';});     
