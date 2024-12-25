@@ -55,7 +55,7 @@
     </xsl:template>
     
     <xsl:template match="tei:del">
-        <del>
+        <del id="Deletion">
             <xsl:attribute name="class">
                 <xsl:value-of select="@hand"/>
             </xsl:attribute>

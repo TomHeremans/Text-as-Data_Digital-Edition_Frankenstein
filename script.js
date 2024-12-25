@@ -122,9 +122,14 @@ function documentLoader() {
   }
 // write another function that will toggle the display of the deletions by clicking on a button
   function DelFunct() {
-  var del_vision = document.getElementsByTagName('del');
-  var del_Array = Array.from(del_vision);
+  var del_vision = document.getElementsById('Deletion');
   del_Array.forEach((DelElement) => {DelElement.classlist.toggle("delAdd");});
+  }
+  
+  function DelFunct() {
+      var del_vision = document.getElementById('Deletion');
+      var delArray = Array.from(del_vision);
+      delArray.forEach((DelElement) => {DelElement.classlist.toggle("delAdd")});
   }
 
   
